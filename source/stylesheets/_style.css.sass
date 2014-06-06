@@ -1,0 +1,74 @@
+$main-color: #0a9b94
+$bg-color: $main-color
+$text-color: white
+@import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900)
+@font-face
+  font-family: 'DIN Medium'
+  src: url('fonts/DIN_Medium.ttf')
+$main-font: 'Lato', Arial, 'ヒラギノ角ゴPro W3','Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo , 'ＭＳ Ｐゴシック', sans-serif
+$num-font: 'DIN Medium', 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif
+
+body
+  text-align: center
+  background: $bg-color
+  color: white
+  font-family: $main-font
+
+=num-font
+  font-family: $num-font
+
+.num
+  +num-font
+  font-size: 120%
+
+a
+  color: white
+  +transition-duration(.5s)
+
+.tori
+  a
+    display: block
+    width: 450px
+    height: 400px
+    margin: 150px auto 100px
+    img
+      width: 450px
+    background-image: image-url('shadow.svg')
+    background-repeat: no-repeat
+    background-position: 85px bottom
+    background-size: 280px
+    &:hover 
+      padding-top: 30px
+      height: 370px
+      background-size: 350px
+      background-position: 50px bottom
+
+h1
+  width: 200px
+  margin: 0 auto 20px
+  img
+    width: 200px
+  position: relative
+  left: -5px
+
+h2
+  font-weight: 300
+  font-size: 20px
+  margin-bottom: 30px
+
+.under-development
+  font-size: 24px
+  +num-font
+
+.slash
+  width: 100%
+  background-image: image-url('slash.svg')
+  background-repeat: repeat-x
+  background-size: 40px 49px
+  height: 49px
+  position: absolute
+  left: 0
+  &.slash-upper
+    top: 0
+  &.slash-lower
+    bottom: 0
