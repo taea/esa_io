@@ -3,6 +3,9 @@
 source 'http://rubygems.org'
 
 gem "middleman", "~>3.3.3"
+gem "rack-contrib"
+gem "puma"
+
 gem 'font-awesome-middleman'
 gem "middleman-sync", "~> 3.0.12"
 gem 'unf'

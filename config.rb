@@ -53,6 +53,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :directory_indexes
+
+set :build_dir, "tmp"
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -69,4 +73,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  #
+
 end
