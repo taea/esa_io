@@ -8,5 +8,6 @@
     %title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "app"
     = javascript_include_tag  "all"
+    %link{ rel: "shortcut icon", href: "images/favicon.ico" }
   %body{class: page_classes}
     = yield
